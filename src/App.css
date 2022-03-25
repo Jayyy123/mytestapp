@@ -1,38 +1,279 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 1440px;
+    overflow-x: hidden;
+}
+/* ---------------------------------- */
+/* Desktop Layout Starts */
+
+/* Hero section starts */
+
+.hero{
+    position: absolute;
+    width: 100%;
+    height: 550px;
+    left: 0px;
+    top: 138px;
+    overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero-container{
+    position: absolute;
+    width: 100%;
+    height: 550px;
+    left: 0px;
+    top: 138px;
+
+    background: url('./cinema.png');
+}
+.hero-text{
+    position: absolute;
+    width: 460px;
+    height: 282px;
+    left: 77px;
+    top: 107px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 94px;
+    letter-spacing: -0.05em;
+
+    color: #FFFFFF;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Hero section ends */
+
+/* Search Section Starts */
+
+.search{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 100%;
+    height: 89px;
+    margin-left: 5.4%;
+    top: 751px;
+    margin-right: 5%;
+}
+.search-text{
+    position: static;
+    width: 5.4%;
+    height: 31px;
+    left: 0px;
+    top: 0px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 4px 0px;
+}
+.search-box{
+    position: static;
+    width: 90%;
+    height: 54px;
+    left: 0px;
+    margin: 0,5%;
+    top: 35px;
+
+    border: 1px solid #000000;
+    box-sizing: border-box;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 4px 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Search section ends */
+
+/* Movies Layout starts*/
+
+.slideshow{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    top: 49px;
+
+    position: absolute;
+    width: 1400px;
+    height: 300px;
+    overflow-x: auto;
+
+}
+.movie{
+    position: static;
+    width: 280px;
+    height: 280px;
+    left: 10px;
+    top: 10px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+    margin: 0px 10px;
+}
+.movie-name{
+    position: static;
+    width: 280px;
+    height: 280px;
+    left: 10px;
+    top: 10px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+    margin: 0px 10px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Movies layout ends */
+
+/* Trending Section Starts */
+
+.trending-container{
+    position: absolute;
+    width: 1400px;
+    height: 349px;
+    left: 5.4%;
+    top: 888px;
+}
+.trending-text{
+    position: absolute;
+    width: 279px;
+    height: 31px;
+    left: 0;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+
+    color: #000000;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* Trending Section Ends */
+
+/* Latest Section Starts */
+
+.latest-container{
+    position: absolute;
+    width: 1552px;
+    height: 349px;
+    left: 5.4%;
+    top: 1285px;
 }
+.latest-text{
+    position: absolute;
+    width: 279px;
+    height: 31px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+
+    color: #000000;
+}
+
+
+/* Latest Section Ends */
+
+/* Desktop Layout ends */
+
+/* ---------------------------------- */
+
+/* Media queries for Tablet starts */
+
+
+@media (max-width: 844px){
+    /* Hero section */
+
+    .hero-text{
+        /* left: calc((width - 460px)/2); */
+        left: 20%;
+        text-align: center;
+        line-height: 93.74px;
+    }
+
+    /* Hero section ends */
+
+}
+
+
+
+
+/* Media queries for Tablet ends */
+
+
+/* ---------------------------------- */
+
+/* Media queries for phone ends */
+
+    /* Hero section */
+
+@media (max-width:620px) {
+
+    .hero-text{
+        /* left: calc((width - 460px)/2); */
+        left: 3.9%;
+        text-align: center;
+        line-height: 93.74px;
+
+    }
+}
+
+
+    /* Hero section ends */
+
+
+/* Media queries for phone ends */
+
+/* ---------------------------------- */
