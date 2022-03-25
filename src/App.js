@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './components/Header/Header';
 import { BrowserRouter } from 'react-router-dom';
-import Trending from './components/movies/Trending';
+// import Trending from './components/movies/Trending';
 import Latest from './components/movies/Latest';
 import React, { useState, useEffect } from 'react'
 
@@ -75,7 +75,21 @@ function App() {
     {/* Trending Section Starts */}
 
     <section className='trending-section'>
-      <Trending MovieList = {MovieList}/>
+    <div className='trending-container'>
+
+      <div className='trending-text'> 
+        Trending Movies
+      </div>
+        <div className='slideshow'>
+            <div className='movie'>
+
+                <MovieList/>
+
+            </div>
+            
+        </div>
+      
+      </div>
       
     </section>
 
