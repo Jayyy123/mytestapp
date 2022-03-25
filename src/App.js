@@ -1,8 +1,8 @@
 import './App.css';
 import Header from './components/Header/Header';
 import { BrowserRouter } from 'react-router-dom';
-import Trending from './movies/Trending';
-import Latest from './movies/Latest';
+import Trending from './components/movies/Trending';
+import Latest from './components/movies/Latest';
 import React, { useState, useEffect } from 'react'
 
 
