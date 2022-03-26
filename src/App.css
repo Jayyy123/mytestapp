@@ -271,6 +271,16 @@ body{
     }
 }
 
+@media (max-width:220px) {
+    .hero-text{
+        /* left: calc((width - 460px)/2); */
+        left: 0.9%;
+        text-align: center;
+        line-height: 93.74px;
+
+    }
+}
+
 
     /* Hero section ends */
 
